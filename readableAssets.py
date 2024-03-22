@@ -104,7 +104,7 @@ for changed_file in changes_all:
         object_id = path_to_object_id(changed_file)
         if object_id != -9999:
             object_name = get_object_name_by_id(object_id)
-            object_name = object_name.replace("#", "\#")
+            object_name = object_name.replace("#", "<span>#</span>")
             if 'objects/' in changed_file:
                 object_lines.append(f"{sign} [{object_id}](https://github.com/{repo}/pull/{pr_number}/files#diff-{file_change_hash}) {object_name}")
             elif 'categories/' in changed_file:
