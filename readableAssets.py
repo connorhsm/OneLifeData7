@@ -166,7 +166,7 @@ for changed_file in changes_all:
         transition_line = f"""
 {sign} [{a} + {b} = {c} + {d} {flag}](https://github.com/{repo}/pull/{pr_number}/files#diff-{file_change_hash})
 <details>
-<summary>{a_name} + {b_name} = {c_name} + {d_name}</summary>
+<summary>`{a_name}` + `{b_name}` = `{c_name}` + `{d_name}`</summary>
 
 ```yaml
 {transition_details}
